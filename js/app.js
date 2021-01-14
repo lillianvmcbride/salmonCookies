@@ -158,4 +158,29 @@ function setHourlyCustomers (min, max){
  lima.render();
  locations.push(lima);
 
- createFooterRow();
+ function handleFormSubmitted(event) {
+    event.preventDefault();
+    var shopInput = document.getElementById('shopLocation');
+    var shopValue = shopInput.value;
+    var minInput = document.getElementById('minimumCookieSales');
+    var minValue = minInput.value;
+    var maxInput = document.getElementById('maximumCookieSales');
+    var maxValue = maxInput.value;
+    var avgInput = document.getElementById('averageCookieSales');
+    var avgValue = avgInput.value;
+    var newShop = new Location(shopValue, parseInt(minValue, 10), parseInt(maxValue, 10), parseFloat(avgValue));
+    newShop.setHourlyCustomerArray();
+    newShop.setHourlyCookieArray();
+    newShop.setTotalCookies();
+    newShop.render();
+    locations.push(newShop);
+    var form = document.getElementById("new-location");
+    createFooterRow();
+    form.reset();
+  }
+ 
+  var formElement = document.getElementById('new-location');
+
+  formElement.addEventListener('submit', handleFormSubmitted);
+
+  createFooterRow();
