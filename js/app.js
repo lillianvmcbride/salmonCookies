@@ -175,6 +175,7 @@ function setHourlyCustomers (min, max){
     newShop.render();
     locations.push(newShop);
     var form = document.getElementById("new-location");
+    var footer = document.removeElement('tfoot');
     createFooterRow();
     form.reset();
   }
