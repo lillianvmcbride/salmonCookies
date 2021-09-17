@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Sales Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/reset.css">   
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +17,6 @@
             <h1>Pat's Salmon</h1>
             <h1 id = "logo">Hors D'oeuvres</h1>
             </header>
-            <p id ="aside">Pat's Salmon Cookies was established in 2012 and is honored to continue serving all your salmon snacking needs. We currently boast five locations worldwide in Seattle, Tokyo, Dubai, Paris, and Lima. 
-            </p>
           </aside>
             <nav>
                 <a href="index.html">Menu</a>
@@ -34,29 +33,28 @@
                     </tr>
                     </thead>
                     <tbody id="tBody"></tbody>
-            
                 </table>
                 <form id="new-location">
                     <fieldset>
-                      <legend>Add new location to table</legend>
                       <!-- for in a label matches id of the input -->
-                      <label for="shopLocation">Shop Location</label>
+                      <label class="a" for="shopLocation">Shop Location</label>
                       <input id="shopLocation" required/>
-                      <label for="minimumCookieSales">Minimum Cookie Sales</label>
+                      <label class="b" for="minimumCookieSales">Minimum Cookie Sales</label>
                       <input id="minimumCookieSales" required/>
-                      <label for="maximumCookieSales">Maximum Cookie Sales</label>
+                      <br>
+                      <br>
+                      <label class="c" for="maximumCookieSales">Maximum Cookie Sales</label>
                       <input id="maximumCookieSales" required/>
-                      <label for="averageCookieSales">Average Cookies Sales</label>
+                      <label class="d" for="averageCookieSales">Average Cookies Sales</label>
                       <input id="averageCookieSales" required/>
+                      <br>
+                      <br>
                       <button>Add the Location!</button>
                     </fieldset>
                   </form>
-            </main>
-                    
+            </main>         
             <footer>
-
             </footer>
             <script src="js/app.js"></script>
     </body>
-
 </html>

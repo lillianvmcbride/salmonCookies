@@ -5,6 +5,9 @@
 1025px — 1200px desktop
 */
 
+canvas {
+  z-index: 10;
+}
 
 header {
   display: inline-block;
@@ -98,15 +101,42 @@ main {
 }
 
 #table, #new-location {
-  margin-left: 300px;
-  margin-right: 400px;
+margin-top: 18px;
 }
 
 #locations {
   padding-bottom: 20px;
 }
 
-table, th, td {
+table, td, th {
+  font-size: 11px;
   padding: 3px;
   border: 1px solid black;
+}
+
+legend{
+  font-size: 14px;
+  margin-left: 250px;
+}
+
+form {
+  font-size: 11px;
+  text-align: left;
+}
+
+.a {
+  margin-left: 52px;
+}
+.b {
+  margin-left: 7px;
+}
+.c {
+  margin-left: 10px;
+}
+.d {
+  margin-left: 10px;
+}
+
+button {
+  margin-left: 250px;
 }
