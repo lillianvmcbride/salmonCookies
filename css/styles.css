@@ -5,8 +5,10 @@
 1025px — 1200px desktop
 */
 
-canvas {
-  z-index: 10;
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
 }
 
 header {
