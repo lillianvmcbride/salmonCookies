@@ -5,12 +5,6 @@
 1025px — 1200px desktop
 */
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 70%;
-  margin: auto;
-}
-
 header {
   display: inline-block;
   background-color:bisque;
@@ -75,7 +69,29 @@ img {
 h2 {
   font-family: 'Ubuntu', sans-serif;
   color: maroon;
-  font-size: 30px;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 180px;
+  margin-bottom: -15px;
+}
+
+h3 {
+font-family: 'Ubuntu', sans-serif;
+color: maroon;
+font-size: 12px;
+font-weight:bold;
+text-align: left;
+}
+
+#locate {
+  text-align: left;
+  float: left;
+  display: inline;
+}
+
+.locateImage {
+text-align: left;
+padding-left: 10px;
 }
 
 nav {
