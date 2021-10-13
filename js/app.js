@@ -163,6 +163,7 @@ function handleFormSubmitted(event) {
   newShop.render();
   locations.push(newShop);
   var form = document.getElementById('new-location');
+  document.removeElement('tfoot');
   createFooterRow();
   form.reset();
 }
