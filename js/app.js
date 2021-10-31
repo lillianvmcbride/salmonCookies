@@ -163,9 +163,9 @@ function handleFormSubmitted(event) {
   newShop.render();
   locations.push(newShop);
   var form = document.getElementById('new-location');
+  form.reset();
   document.removeElement('tfoot');
   createFooterRow();
-  form.reset();
 }
 
 var formElement = document.getElementById('new-location');
