@@ -1,7 +1,11 @@
 /*
-320px — 480px mobile
-481px — 768px tablet
-769px by 576px — 1024px laptop
+320px — 480px width = mobile
+
+481px — 768px width = tablet
+- orientate yourself please
+
+769px — 1024px width laptop
+
 1025px — 1200px desktop
 */
 
@@ -15,7 +19,7 @@ header {
 
 h1 {
   font-size: 20px;
-  line-height: .7;
+  line-height: .8;
   font-weight: bold;
   text-align: left;
   color: maroon;
@@ -39,14 +43,17 @@ aside {
  border-radius: 18%;
 }
 
+ .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 590px;
+}
+
 img {
   padding-left: 180px;
   max-width: 265px;
   border-radius: 15%;
-}
-
-.image {
-  flex-basis: 40%;
 }
 
 .text {
@@ -66,35 +73,6 @@ h2 {
   text-align: left;
   padding-left: 180px;
   margin-bottom: -15px;
-}
-
-h4 {
-font-family: 'Ubuntu', sans-serif;
-color: maroon;
-font-size: 12px;
-font-weight:bold;
-text-align: left;
-padding-left: 120px;
-}
-
-.container {
-display: flex;
-flex-flow: column wrap;
-gap: 5px 50px;
-}
-
-.locate {
-  text-align: left;
-  display: inline;
-}
-
-.next {
-  display: block;
-}
-
-.locateImage {
-float: left;
-padding-left: 10px;
 }
 
 nav {
@@ -161,3 +139,42 @@ form {
 button {
   margin-left: 250px;
 }
+
+h4 {
+font-family: 'Ubuntu', sans-serif;
+color: maroon;
+font-size: 14px;
+font-weight:bold;
+text-align: left;
+padding-left: 5px;
+}
+
+h5 {
+  padding-left: 5px;
+  display: inline;
+  color: maroon;
+  font-size: 13px;
+}
+
+h6 {
+  color: maroon;
+  font-size: 13px;
+}
+
+.locationsContainer {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  width: 590px;
+}
+
+.locationListItem {
+  
+}
+
+.locationImage {
+  height: 100px;
+  width: 100px;
+  padding-left: 15px
+}
+
